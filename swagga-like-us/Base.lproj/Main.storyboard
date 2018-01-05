@@ -41,18 +41,18 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="130" id="Ybw-KN-9H4" customClass="CategoryCell" customModule="swagga_like_us" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ybw-KN-9H4" id="rxo-xj-ELn">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ybw-KN-9H4" id="rxo-xj-ELn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="MlK-GW-vG5">
-                                                    <rect key="frame" x="0.0" y="3" width="375" height="130"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="MlK-GW-vG5">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="124"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="gzy-cK-xWw"/>
+                                                        <constraint firstAttribute="height" constant="124" id="AVN-Uw-rFJ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEq-Oz-4J0">
-                                                    <rect key="frame" x="107" y="-16" width="160" height="32"/>
+                                                    <rect key="frame" x="107" y="49" width="160" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="160" id="7kh-kz-NWi"/>
                                                         <constraint firstAttribute="height" constant="32" id="c54-Y6-utv"/>
