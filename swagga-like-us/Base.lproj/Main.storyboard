@@ -95,17 +95,17 @@
                     <navigationItem key="navigationItem" title="SWAGGALIKEUS" id="i9e-Vo-fft"/>
                     <connections>
                         <outlet property="categoryTableView" destination="uOj-KC-o85" id="Zgi-5n-xR9"/>
-                        <segue destination="Eey-ip-kYT" kind="show" id="wER-dS-AAT"/>
+                        <segue destination="Eey-ip-kYT" kind="show" identifier="ProductsVC" id="wER-dS-AAT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="vwV-7F-r26">
             <objects>
-                <viewController id="Eey-ip-kYT" sceneMemberID="viewController">
+                <viewController id="Eey-ip-kYT" customClass="ProductsVC" customModule="swagga_like_us" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="buf-Jx-CT2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-gP-MXf">
                                 <rect key="frame" x="0.0" y="76" width="375" height="527"/>
-                                <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KMd-0d-KAg">
                                     <size key="itemSize" width="160" height="245"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -130,7 +130,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eOU-u3-VSk" customClass="ProductCell" customModule="swagga_like_us" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="eOU-u3-VSk" customClass="ProductCell" customModule="swagga_like_us" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="245"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -190,6 +190,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1y8-QQ-GBc"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="TbF-gP-MXf" id="iLf-mF-nPX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJC-zr-spe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
